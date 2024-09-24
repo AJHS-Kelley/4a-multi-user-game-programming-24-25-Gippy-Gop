@@ -1,0 +1,118 @@
+
+
+  using System;
+
+class Rockpaperscissors {
+  static void Main() {
+      //player info
+string userChoice;
+int playerscore =0;
+it playerName;
+
+//Cpu varibles
+int cpuScore=0;
+string cpuChoice;
+
+
+// Game greeting
+
+Console.WriteLine("Lets play rock paper Scissors! First to 5 points wins!\n");
+
+ //Create win factors and lose factors
+ Console.WriteLine("Please type your name and press ENTER\n");
+ 
+playerName = Console. Readline();
+Console.WriteLine($"Hello{Playername}.Is this correct\n");
+Console.WriteLine("Please type yes or no, then press enter.\n");
+string isCorrect = Console.Readline().ToLower();
+
+if(isCorrect =="yes")
+{
+  Console.WriteLine($"Great! I'll call you {playerName}.\n");
+
+}
+else if (isCorrect =="no")
+playerName = Console.Readline();
+
+
+Console.WriteLine($"ello{playerName}")
+Console.WriteLine ("Welcome to rock paper scissors -+ playerName+"\n)
+Console.WriteLine("In this game youll play againse a CPU \nRock beats scissors, Paper beats rock and Scissors beat paper");
+Console.WriteLine ("Input ROCK, PAPER, OR SCISSORS.");
+cpuChoice = Console.Readline().ToLower
+
+while (playerscore < 5 && cpuScore < 5)
+
+//Print all scores.
+Console.WriteLine($"Your Score:{playerScore}\CPU Score: {cpuScore}\n");
+// Allow player to select R, P, S.
+Console.Writeline("Please choose rock, paper, or scissors. Type your answer and press enter");
+playerChoice != "rock"&&playerChoice != "playerChoice != "scissors"
+
+*/Allow cpu to select  randomly.
+
+Random rnd = new Random();
+int cpuRand = rnd.Next(0,2)
+if(cpuRand == 0)
+{
+  cpuChoice = "Rock";
+}
+  {
+    else if (cpuRand == 1);
+
+  }
+  {
+    cpuChoice ="Paper";
+  }
+{
+  else if (cpuRand == 2);
+}
+{
+  cpuChoice = "Scissors";
+}
+{
+  else if (cpuRand == 3)
+}
+else 
+{
+  Console.WriteLine("Unable to determine CPU choice.\n");
+}
+if (playerChoice == "rock" && cpuChoice == "paper")
+Console.WriteLine.WriteLine("The CPU wins.\n")
+  {
+    else if 
+  }
+(playerChoice == "rock" && cpuChoice == "sciccors")
+else if 
+  }
+(playerChoice == "rock" && cpuChoice == "rock")
+Console.WriteLine.WriteLine("no one wins.\n")
+
+Console.WriteLine.WriteLine("you win.\n")
+else if 
+  }
+(playerChoice == "paper" && cpuChoice == "sciccors")
+Console.WriteLine.WriteLine("you win.\n")
+else if 
+{
+(playerChoice == "rock" && cpuChoice == "rock")
+Console.WriteLine.WriteLine("no one wins.\n")
+else if 
+  }
+(playerChoice == "rock" && cpuChoice == "sciccors")
+Console.WriteLine.WriteLine("you win.\n")
+else if 
+  }
+(playerChoice == "rock" && cpuChoice == "sciccors")
+Console.WriteLine.WriteLine("you win.\n")
+{
+
+
+
+
+//Compare the two choices  and determine a winner.
+//Output the results to the screen.
+//Give the winner a point.
+
+  }
+}
