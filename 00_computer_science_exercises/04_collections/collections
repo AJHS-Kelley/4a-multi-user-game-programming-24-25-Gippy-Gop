@@ -57,8 +57,8 @@ double[] GPA = {0.27D, 1.99D, 4.02D , 0.0D, 3.25D};
 //COMMON ERRORS WITH ARRAYS
 //Console.WriteLine(breakFastFoods[99]); //INCEX OUT OF BOUNDS -- ACCESSING INDEX THAT DOES NOT EXIST IN THE ARRAY.
 
-testScores[0]="99";
-
+//testScores[0]="99";// Error Message "Cannot implicitly convert dataType to dataType"
+// Trying to put incorrect data type into the array.
 
 
 
