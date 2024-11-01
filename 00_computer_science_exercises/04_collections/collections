@@ -61,6 +61,23 @@ double[] GPA = {0.27D, 1.99D, 4.02D , 0.0D, 3.25D};
 // Trying to put incorrect data type into the array.
 
 
+//COMMON ARRAY METHODS -- ways to work with the array data.
+//Sorting Array
+int[]intArr = {-8,6,-33,21,-45, 999, 666, 480, 82, -1111};
+string[]zooAnimals = {"penguin", "Racoon", "Bandicoot", "Giraffe", "Lion", "Cockatoo","zebra", "Polarbear", "Tiger", "monkey", "Elephant"};
+
+Array.Sort(intArr);
+Array.Sort(zooAnimals);
+//  Array .Sort will sort string arrays ALPHABETICALLY A-Z and numerical array from LEAST to Greatest
+Console.WriteLine ("The elements of each array are:\n");
+ Console.WriteLine("zooAnimals after Array.Sort():\n" + String.Join(",", zooAnimals));
+ Console.WriteLine();//Print an empty line to the screen.
+
+
+//Finding the MIN, MAX, and SUM  for numerical arrays.
+Console.WriteLine("The MINIMUM value for intArr is:" + intArr.Min());
+Console.WriteLine("The MAXIMUM value for intArr is:" + intArr.Max());
+Console.WriteLine("The SUM value for intArr is:" + intArr.Sum());
 
 
 
