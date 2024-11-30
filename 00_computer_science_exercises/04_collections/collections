@@ -1,0 +1,141 @@
+//Collections example
+
+using System;
+using System.Linq;
+using System.Collections;
+
+
+class Collections {
+  static void Main() { 
+
+//     /*
+//     In C# an colection is known as a array
+//     --in EACH ITEM IN THE ARRAY IS A ELEMENT
+//     --NUMBER OF ELEMENTS IN AN ARRAY CANNOT BE CHANGED
+//     -- CONTENTS OF EACH ELEMENT CAN CHANGE.
+//     --ARRAYS ARE ORDERED, MEANING EACH ITEM HAS A FIXED POSITION 
+//     --POSITION OF THE ELEMENT IS THE INDEX
+//     -- FIRST ELEMENT INDEX IS 0
+// */
+
+// // DECARING AND DEFINING IN A ARRAY
+// string[] breakFastFoods = {"Dog food", "Wet food", "Sausage", "potatoes"};
+// int[] testScores = {0, 25, 15, 75,99};
+// double[] GPA = {0.27D, 1.99D, 4.02D , 0.0D, 3.25D};
+
+// // //print array contents -- all elements on single line
+// // Console.WriteLine ("The elements of each array are:\n");
+// // Console.WriteLine("breakFastFoods:\n" + String.Join(",", breakFastFoods));
+// // Console.WriteLine();//Print an empty line to the screen.
+// // //
+// // Console.WriteLine ("The elements of each array are:\n");
+// // Console.WriteLine("breakFastFoods:\n" + String.Join("\n", breakFastFoods));
+// // Console.WriteLine();//Print an empty line to the screen.
+
+// // // How long is my array? DETERMINING ARRAY LENGTH
+// // Console.WriteLine("The length of the breakFastFoods array is: " + breakFastFoods.Length);
+// // // .Length is known as a PROPERTY of the array
+
+// // //Accessing Elements in the array with the index
+// // Console.WriteLine("The first element in breakFastFoods is: " + breakFastFoods[0]);
+// // //PRINT THE 2nd ELEMENT OF THE testScores array.
+// // //PRINT THE 3rd ELEMENT OF THE GPA array.
+
+// // //Shortcut to Access Last Item in an Array
+// // Console.WriteLine("The last element of breakfastFoods is: " + breakFastFoods[breakFastFoods.Length]);
+
+// // Console.WriteLine("The last element of testScores is:" + testScores[testScores.Length -1]);
+
+// // //Changing element in the array
+// // breakFastFoods[2]= "Whopper vs BigMac";
+// // testScores[0]= -1;
+// // GPA[1] = 4.0D;
+// // Console.WriteLine ("The elements of each array are:\n");
+// // Console.WriteLine("breakFastFoods:\n" + String.Join(",", breakFastFoods));
+// // Console.WriteLine();//Print an empty line to the screen.
+
+// //COMMON ERRORS WITH ARRAYS
+// //Console.WriteLine(breakFastFoods[99]); //INCEX OUT OF BOUNDS -- ACCESSING INDEX THAT DOES NOT EXIST IN THE ARRAY.
+
+// //testScores[0]="99";// Error Message "Cannot implicitly convert dataType to dataType"
+// // Trying to put incorrect data type into the array.
+
+
+// //COMMON ARRAY METHODS -- ways to work with the array data.
+// //Sorting Array
+// int[]intArr = {-8,6,-33,21,-45, 999, 666, 480, 82, -1111};
+// string[]zooAnimals = {"penguin", "Racoon", "Bandicoot", "Giraffe", "Lion", "Cockatoo","zebra", "Polarbear", "Tiger", "monkey", "Elephant"};
+
+// Array.Sort(intArr);
+// Array.Sort(zooAnimals);
+// //  Array .Sort will sort string arrays ALPHABETICALLY A-Z and numerical array from LEAST to Greatest
+// Console.WriteLine ("The elements of each array are:\n");
+//  Console.WriteLine("zooAnimals after Array.Sort():\n" + String.Join(",", zooAnimals));
+//  Console.WriteLine();//Print an empty line to the screen.
+
+
+// //Finding the MIN, MAX, and SUM  for numerical arrays.
+// Console.WriteLine("The MINIMUM value for intArr is:" + intArr.Min());
+// Console.WriteLine("The MAXIMUM value for intArr is:" + intArr.Max());
+// Console.WriteLine("The SUM value for intArr is:" + intArr.Sum());
+
+//ArrayList--> Basically an array  you can add/ remove elements from.
+var exampleArrlist = new ArrayList(); //Create an new ArrayList
+// Adding elements to an ArrayList use .Add use .Add()
+exampleArrlist.Add(5);
+exampleArrlist.Add("The trump assasination");
+exampleArrlist.Add (false);
+exampleArrlist.Add(1.25D);
+
+//Create ArrayList with Values
+var exampleArrlist2 = new ArrayList()
+{
+  -10, "last Name", "Purple", false, 25.25D, 19500, 0.0D
+};
+
+Console.WriteLine(exampleArrlist[2]);
+Console.WriteLine(exampleArrlist[5]);
+
+exampleArrlist.Insert(3,"You like Jazz?\n");
+exampleArrlist.Insert(0, -99);
+
+//.Remove(value) removes the FIRST OCCURENCE of the item from the ArrayList.
+var newList = new ArrayList()
+{
+  -69, 69, 89, 46, 666, 54, 33, 21,-33, 46
+};
+Console.WriteLine(newList[3]);
+
+Console.WriteLine(newList[3]);
+
+// Deleting based on index number.
+//.RemoveAt(value) --> deletes the item at the specified index
+newList.RemoveAt(0);
+
+//Delete the Last Item 
+newList.RemoveAt(newList.Length - 1);
+
+//Remove an entire range of elements.
+//.RemoveRange(firstIndexToDelete, LastIndexToDelete)
+newList.RemoveRange(3, 8);
+
+//Shortcut to Delete from one item through end of list.
+newList.RemoveRange(4, newList.Length - 1);
+
+//Does the ArrayList contain a certain value.
+// .Contains(value) returns true if the list has that value, false otherwise 
+var playerInventory = new ArrayList()
+{
+  "Sword", "Sheild","Bazooka","1-Up Power up", "Death Notebook", "Potato"
+};
+
+Console.WriteLine(playerInventory.Contains("Fishing Pole"));
+Console.WriteLine(playerInventory.Contains("Sheild"));
+if(playerInventory.Contains("Sheild"))
+{
+  //Polkadots
+}
+
+  }
+
+}
